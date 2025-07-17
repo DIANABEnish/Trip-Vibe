@@ -63,7 +63,6 @@
 
 .form-control{
     border:0;
-    margin:2px;
     border-radius:30px !important;
 }
 
@@ -71,7 +70,7 @@
     background-image:linear-gradient(#00ff7e,#1f3d90);
     color:#fff;
     border:0;
-    padding: 0 25px !important;
+    padding: 0 40px !important;
     border-radius:30px !important;
 }
 
@@ -281,6 +280,7 @@
     width:150px;
     margin-top:-55px;
     margin-bottom: -35px;
+    margin-left: -20px;
     
 }
 
@@ -328,6 +328,15 @@
     .feature-img {
         height: 200px;
     }
+    
+   
+    .header {
+        background-attachment: scroll; 
+    }
+    
+    .banner {
+        background-attachment: scroll; 
+    }
 }
 
 @media (max-width: 480px) {
@@ -348,6 +357,33 @@
     }
     
     .feature-img {
-        height: 180px;
+        height: 250px;
     }
+
+    .gallery-box img{
+        height: 230px;
+    }
+
+    .gallery-box img:hover{
+        transform: scale(1.05);
+    }
+    
+   
+    .header {
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .banner {
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .banner-highlights{
+       padding:50px 0;
+       margin-top: 80px;
+  
+}
 }
