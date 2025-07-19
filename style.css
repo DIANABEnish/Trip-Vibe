@@ -115,7 +115,7 @@ body {
     flex-direction: column;
     overflow: hidden; 
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
 .feature-box:hover {
@@ -208,12 +208,12 @@ body {
     height: 200px;
     cursor: pointer;
     border-radius:10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     object-fit: cover;
 }
 
 .gallery-box img:hover{
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 
 .gallery-box h4{
@@ -458,7 +458,7 @@ body {
     }
 
     .gallery-box img {
-        height: 180px;
+        height: 220px;
     }
 
     .gallery-box img:hover {
