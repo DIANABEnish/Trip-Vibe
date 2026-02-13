@@ -1,7 +1,9 @@
+import { useState } from "react";
 import telavivImg from "@/assets/gallery-telaviv.jpg";
 import singaporeImg from "@/assets/gallery-singapore.jpg";
 import romeImg from "@/assets/gallery-rome.jpg";
 import mykonosImg from "@/assets/gallery-mykonos.jpg";
+import DestinationModal from "./DestinationModal";
 
 const cities = [
   { name: "Tel Aviv", image: telavivImg },
@@ -11,6 +13,8 @@ const cities = [
 ];
 
 const Gallery = () => {
+  const [selected, setSelected] = useState<{ name: string; image: string } | null>(null);
+
   return (
     <section className="py-20 md:py-28 px-6 bg-muted">
       <div className="max-w-[1200px] mx-auto">
@@ -20,7 +24,11 @@ const Gallery = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {cities.map((city) => (
-            <div key={city.name} className="group relative rounded-xl overflow-hidden cursor-pointer">
+            <div
+              key={city.name}
+              className="group relative rounded-xl overflow-hidden cursor-pointer"
+              onClick={() => setSelected(city)}
+            >
               <img
                 src={city.image}
                 alt={city.name}
@@ -34,6 +42,15 @@ const Gallery = () => {
           ))}
         </div>
       </div>
+
+      {selected && (
+        <DestinationModal
+          open={!!selected}
+          onClose={() => setSelected(null)}
+          cityName={selected.name}
+          cityImage={selected.image}
+        />
+      )}
     </section>
   );
 };
