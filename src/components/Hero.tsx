@@ -1,8 +1,12 @@
-import { Search } from "lucide-react";
+import { useState } from "react";
 import heroOcean from "@/assets/hero-ocean.jpg";
 import Navbar from "./Navbar";
+import DestinationSearch from "./DestinationSearch";
+import DestinationModal from "./DestinationModal";
 
 const Hero = () => {
+  const [selectedDest, setSelectedDest] = useState<string | null>(null);
+
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden" id="top">
       {/* Animated ocean background */}
@@ -12,7 +16,6 @@ const Hero = () => {
           alt="Ocean waves"
           className="w-full h-full object-cover animate-ocean"
         />
-        {/* Shimmer overlay for wave effect */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 animate-shimmer" />
       </div>
 
@@ -33,19 +36,17 @@ const Hero = () => {
 
         {/* Search bar */}
         <div className="mt-8 w-full max-w-md animate-fade-up-delay-2">
-          <div className="flex items-center bg-primary-foreground rounded-full overflow-hidden shadow-xl">
-            <input
-              type="text"
-              placeholder="Search Country or City"
-              className="flex-1 px-6 py-4 text-foreground placeholder:text-muted-foreground bg-transparent outline-none text-sm"
-            />
-            <button className="gradient-brand px-8 py-4 text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity flex items-center gap-2">
-              <Search className="w-4 h-4" />
-              Search
-            </button>
-          </div>
+          <DestinationSearch onSelectDestination={(name) => setSelectedDest(name)} />
         </div>
       </div>
+
+      {selectedDest && (
+        <DestinationModal
+          open={!!selectedDest}
+          onClose={() => setSelectedDest(null)}
+          cityName={selectedDest}
+        />
+      )}
     </section>
   );
 };

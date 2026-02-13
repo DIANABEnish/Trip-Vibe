@@ -5,6 +5,7 @@ import romeImg from "@/assets/gallery-rome.jpg";
 import mykonosImg from "@/assets/gallery-mykonos.jpg";
 import DestinationModal from "./DestinationModal";
 
+
 const cities = [
   { name: "Tel Aviv", image: telavivImg },
   { name: "Singapore", image: singaporeImg },
