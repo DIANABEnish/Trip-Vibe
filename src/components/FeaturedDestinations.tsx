@@ -68,13 +68,13 @@ const FeaturedDestinations = () => {
               className="group bg-card rounded-xl overflow-hidden card-shadow hover:card-shadow-hover transition-all duration-500 hover:-translate-y-1.5 flex flex-col"
             >
               {/* Image */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-64 overflow-hidden flex-shrink-0">
                 <img
                   src={dest.image}
                   alt={dest.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute left-4 -bottom-5 w-12 h-12 rounded-full bg-accent flex items-center justify-center text-accent-foreground font-semibold text-sm shadow-lg">
+                <div className="absolute left-4 bottom-3 w-12 h-12 rounded-full bg-accent flex items-center justify-center text-accent-foreground font-semibold text-sm shadow-lg z-10">
                   {dest.price}
                 </div>
                 <div className="absolute right-3 bottom-1 bg-card/95 backdrop-blur-sm px-2 py-1 rounded">
@@ -83,7 +83,7 @@ const FeaturedDestinations = () => {
               </div>
 
               {/* Details */}
-              <div className="p-6 pt-8 flex-1 flex flex-col">
+              <div className="p-6 pt-5 flex-1 flex flex-col">
                 <h3 className="text-lg font-semibold text-foreground">{dest.name}</h3>
                 <p className="text-sm text-muted-foreground mt-2 leading-relaxed flex-1">
                   {dest.description}
