@@ -1,6 +1,10 @@
+import { useState } from "react";
 import bannerImg from "@/assets/banner-beach.jpg";
+import ContactModal from "./ContactModal";
 
 const Banner = () => {
+  const [contactOpen, setContactOpen] = useState(false);
+
   return (
     <section
       className="relative min-h-[60vh] md:min-h-[70vh] flex items-center bg-fixed bg-cover bg-center"
@@ -17,11 +21,16 @@ const Banner = () => {
               Confirm your booking before 21st June and get instant savings on your trip.
             </p>
           </div>
-          <button className="px-8 py-3 rounded-full border-2 border-primary-foreground text-primary-foreground font-medium hover:bg-primary-foreground/15 transition-all duration-300 whitespace-nowrap">
+          <button
+            onClick={() => setContactOpen(true)}
+            className="px-8 py-3 rounded-full border-2 border-primary-foreground text-primary-foreground font-medium hover:bg-primary-foreground/15 transition-all duration-300 whitespace-nowrap"
+          >
             Book Now
           </button>
         </div>
       </div>
+
+      <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
     </section>
   );
 };
