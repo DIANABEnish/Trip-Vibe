@@ -6,17 +6,30 @@ import Banner from "@/components/Banner";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       <Hero />
-      <FeaturedDestinations />
-      <Services />
-      <Gallery />
-      <Banner />
-      <WhyChooseUs />
-      <Testimonials />
+      <ScrollReveal>
+        <FeaturedDestinations />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Services />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Gallery />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Banner />
+      </ScrollReveal>
+      <ScrollReveal>
+        <WhyChooseUs />
+      </ScrollReveal>
+      <ScrollReveal>
+        <Testimonials />
+      </ScrollReveal>
       <Footer />
     </main>
   );
