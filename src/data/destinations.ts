@@ -4,6 +4,7 @@ export interface DestinationInfo {
   description: string;
   highlights: string[];
   whyVisit: string;
+  imageUrl: string;
 }
 
 export const allDestinations: Record<string, DestinationInfo> = {
@@ -19,6 +20,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Gordon Beach – Golden sand, turquoise water & legendary sunset views",
     ],
     whyVisit: "Tel Aviv offers world-class nightlife, incredible cuisine, rich history, and year-round Mediterranean sunshine. A city that never sleeps and always surprises.",
+    imageUrl: "https://images.unsplash.com/photo-1544252890-c9e40604253d?w=800&h=500&fit=crop",
   },
   "Singapore": {
     type: "city",
@@ -31,6 +33,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Sentosa Island – Beaches, Universal Studios & adventure parks",
     ],
     whyVisit: "One of the world's safest, cleanest, and most diverse destinations. Every neighborhood tells a different cultural story – from Little India to Chinatown to Marina Bay.",
+    imageUrl: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800&h=500&fit=crop",
   },
   "Rome": {
     type: "city",
@@ -43,6 +46,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Trevi Fountain – Baroque masterpiece and iconic wishing spot",
     ],
     whyVisit: "An unmatched combination of ancient wonders, Renaissance art, and arguably the best food on the planet. Rome feeds the soul – literally and figuratively.",
+    imageUrl: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&h=500&fit=crop",
   },
   "Mykonos": {
     type: "city",
@@ -55,6 +59,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Windmills of Kato Mili – Iconic 16th-century landmarks overlooking the sea",
     ],
     whyVisit: "The perfect blend of stunning natural beauty, rich mythology, world-class beach clubs, and an atmosphere that's both electric and deeply relaxing.",
+    imageUrl: "https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=800&h=500&fit=crop",
   },
   "Paris": {
     type: "city",
@@ -67,6 +72,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Seine River Cruise – Glide past Notre-Dame, Musée d'Orsay & more",
     ],
     whyVisit: "Paris is where art, fashion, gastronomy, and romance converge. From croissants at a corner café to sunset at the Trocadéro, it never gets old.",
+    imageUrl: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=500&fit=crop",
   },
   "London": {
     type: "city",
@@ -79,6 +85,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "West End – Rival to Broadway with world-class theater productions",
     ],
     whyVisit: "Iconic landmarks, incredible free museums, vibrant neighborhoods like Camden and Shoreditch, and a cultural energy that's impossible to replicate.",
+    imageUrl: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&h=500&fit=crop",
   },
   "Tokyo": {
     type: "city",
@@ -91,6 +98,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Akihabara – Electric Town, the global capital of anime & gaming culture",
     ],
     whyVisit: "Tokyo has the most Michelin stars of any city worldwide, blending ancient tradition with futuristic innovation at every turn.",
+    imageUrl: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&h=500&fit=crop",
   },
   "New York": {
     type: "city",
@@ -103,6 +111,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Brooklyn Bridge – Walk across for stunning Manhattan skyline views",
     ],
     whyVisit: "Unmatched energy, world-class museums like the Met and MoMA, food from every corner of the globe, and a vibe that's truly one of a kind.",
+    imageUrl: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&h=500&fit=crop",
   },
   "Dubai": {
     type: "city",
@@ -115,6 +124,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Desert Safari – Dune bashing, camel rides & Bedouin-style dining under the stars",
     ],
     whyVisit: "Dubai offers year-round sunshine, tax-free shopping, futuristic architecture, and experiences you simply can't find anywhere else.",
+    imageUrl: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=500&fit=crop",
   },
   "Barcelona": {
     type: "city",
@@ -127,6 +137,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Gothic Quarter – Medieval streets filled with history and hidden plazas",
     ],
     whyVisit: "Barcelona has it all: beach, culture, nightlife, and some of the best food in Europe. The Gaudí architecture alone is worth the trip.",
+    imageUrl: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&h=500&fit=crop",
   },
   "Istanbul": {
     type: "city",
@@ -139,6 +150,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Topkapi Palace – Former Ottoman imperial residence with stunning collections",
     ],
     whyVisit: "Istanbul offers a sensory feast – incredible history, mouthwatering cuisine (kebabs, baklava, meze), and a cultural depth that few cities can match.",
+    imageUrl: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&h=500&fit=crop",
   },
   "Bangkok": {
     type: "city",
@@ -151,6 +163,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Chao Phraya River – Explore riverside temples and vibrant neighborhoods",
     ],
     whyVisit: "Bangkok is incredibly affordable, endlessly exciting, and the street food alone – from pad thai to mango sticky rice – is a reason to book a flight.",
+    imageUrl: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800&h=500&fit=crop",
   },
   "Sydney": {
     type: "city",
@@ -163,6 +176,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "The Rocks – Historic cobblestoned neighborhood with weekend markets",
     ],
     whyVisit: "Incredible weather, stunning beaches, a thriving food and wine scene, and one of the most beautiful natural harbors in the world.",
+    imageUrl: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&h=500&fit=crop",
   },
   "Amsterdam": {
     type: "city",
@@ -175,6 +189,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Canal Ring – UNESCO-listed 17th-century waterways, best explored by boat",
     ],
     whyVisit: "Compact, bike-friendly, and packed with art, history, and charm. Amsterdam is one of Europe's most livable and lovable cities.",
+    imageUrl: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800&h=500&fit=crop",
   },
   "Prague": {
     type: "city",
@@ -187,6 +202,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Petřín Hill – Miniature Eiffel Tower with panoramic views of the city",
     ],
     whyVisit: "One of Europe's most beautiful and budget-friendly capitals, with incredible beer (the birthplace of Pilsner), rich history, and unforgettable architecture.",
+    imageUrl: "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=800&h=500&fit=crop",
   },
   "Lisbon": {
     type: "city",
@@ -199,6 +215,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Tram 28 – Vintage yellow tram winding through historic neighborhoods",
     ],
     whyVisit: "Lisbon is one of Europe's most affordable and charming capitals, with incredible seafood, year-round sunshine, and a creative energy that's contagious.",
+    imageUrl: "https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=800&h=500&fit=crop",
   },
   "Bali": {
     type: "city",
@@ -211,6 +228,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Seminyak Beach – Trendy beach clubs, boutique shopping & sunset cocktails",
     ],
     whyVisit: "Bali offers an unbeatable combination of natural beauty, spiritual depth, adventure, and luxury – all at incredibly affordable prices.",
+    imageUrl: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=500&fit=crop",
   },
   "Marrakech": {
     type: "city",
@@ -223,6 +241,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Souks of the Medina – Labyrinthine markets selling leather, spices, pottery & textiles",
     ],
     whyVisit: "Marrakech is a feast for the senses with incredible riads (traditional guesthouses), hammam spas, and a cultural richness that stays with you long after you leave.",
+    imageUrl: "https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=800&h=500&fit=crop",
   },
   "Cancún": {
     type: "city",
@@ -235,6 +254,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Hotel Zone – 22 km of beachfront resorts, shopping & dining",
     ],
     whyVisit: "Cancún combines Caribbean paradise with Mayan heritage, offering everything from all-inclusive relaxation to cenote diving and ruin exploration.",
+    imageUrl: "https://images.unsplash.com/photo-1552074284-5e88ef1aef18?w=800&h=500&fit=crop",
   },
   "Rio de Janeiro": {
     type: "city",
@@ -247,6 +267,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Carnival – The world's biggest and most spectacular festival",
     ],
     whyVisit: "Rio's combination of natural beauty, cultural vibrancy, music, and warm-hearted locals (cariocas) creates an atmosphere found nowhere else on Earth.",
+    imageUrl: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800&h=500&fit=crop",
   },
   "Cape Town": {
     type: "city",
@@ -259,6 +280,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Boulders Beach – Colony of adorable African penguins",
     ],
     whyVisit: "Cape Town offers extraordinary natural beauty, award-winning wine regions, incredible value for money, and safari experiences just hours away.",
+    imageUrl: "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=800&h=500&fit=crop",
   },
   "Kyoto": {
     type: "city",
@@ -271,6 +293,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Gion District – Traditional geisha quarter with tea houses and evening strolls",
     ],
     whyVisit: "Kyoto is where you experience the soul of Japan – the tea ceremonies, the kaiseki cuisine, the quiet temples, and a pace of life that invites reflection.",
+    imageUrl: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&h=500&fit=crop",
   },
   "Havana": {
     type: "city",
@@ -283,6 +306,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Vintage Car Tour – Cruise in a classic 1950s convertible through the city",
     ],
     whyVisit: "Havana is one of the most unique cities in the world – frozen in time yet bursting with energy, creativity, and a soul that's impossible to forget.",
+    imageUrl: "https://images.unsplash.com/photo-1500759285222-a95626b934cb?w=800&h=500&fit=crop",
   },
   "Vienna": {
     type: "city",
@@ -295,6 +319,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Belvedere Museum – Home to Klimt's iconic 'The Kiss'",
     ],
     whyVisit: "Consistently ranked the world's most livable city, Vienna offers imperial elegance, extraordinary music, and a café culture that's a UNESCO tradition.",
+    imageUrl: "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=800&h=500&fit=crop",
   },
   "Reykjavik": {
     type: "city",
@@ -307,6 +332,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Hallgrímskirkja – Iconic church inspired by basalt column formations",
     ],
     whyVisit: "Iceland is one of the most unique places on Earth – volcanic landscapes, midnight sun in summer, northern lights in winter, and adventures around every bend.",
+    imageUrl: "https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=800&h=500&fit=crop",
   },
   "Budapest": {
     type: "city",
@@ -319,6 +345,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Hungarian Parliament – Gothic Revival masterpiece lit up along the river",
     ],
     whyVisit: "Budapest offers imperial beauty, incredible thermal baths, a legendary nightlife scene, and all at a fraction of Western European prices.",
+    imageUrl: "https://images.unsplash.com/photo-1549877452-9c387954fbc2?w=800&h=500&fit=crop",
   },
   "Dubrovnik": {
     type: "city",
@@ -331,6 +358,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Cable Car – Ride to Mt. Srđ for sweeping coastal panoramas",
     ],
     whyVisit: "Dubrovnik combines medieval charm, Game of Thrones fame, crystal-clear Adriatic swimming, and unforgettable Croatian cuisine and wine.",
+    imageUrl: "https://images.unsplash.com/photo-1555990538-1e6c89d0b78a?w=800&h=500&fit=crop",
   },
   "Santorini": {
     type: "city",
@@ -343,6 +371,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Wine Tasting – Unique volcanic wines, especially Assyrtiko",
     ],
     whyVisit: "Santorini is pure romance – caldera views, cave hotels, black-sand beaches, and sunsets that will stay with you forever.",
+    imageUrl: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&h=500&fit=crop",
   },
   "Maldives": {
     type: "city",
@@ -355,6 +384,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Bioluminescent Beaches – Glowing plankton light up the shore at night",
     ],
     whyVisit: "The Maldives is the ultimate luxury escape – pristine nature, world-class diving, and a level of serenity that resets your soul.",
+    imageUrl: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&h=500&fit=crop",
   },
   "Phuket": {
     type: "city",
@@ -367,6 +397,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Old Phuket Town – Colorful Sino-Portuguese architecture & street art",
     ],
     whyVisit: "Phuket delivers tropical beauty, Thai hospitality, incredible food, and adventure – from elephant sanctuaries to world-class diving – at exceptional value.",
+    imageUrl: "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=800&h=500&fit=crop",
   },
   "Petra": {
     type: "city",
@@ -379,6 +410,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Petra by Night – Candlelit walk through the Siq under starry skies",
     ],
     whyVisit: "Petra is one of the New Seven Wonders of the World and an experience that transcends tourism – it's stepping into living, breathing history.",
+    imageUrl: "https://images.unsplash.com/photo-1579606032821-4e6161c81571?w=800&h=500&fit=crop",
   },
   "Cusco": {
     type: "city",
@@ -391,6 +423,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Rainbow Mountain (Vinicunca) – Naturally striped mountain at 5,200m",
     ],
     whyVisit: "Cusco is the heart of South America's most impressive ancient civilization, offering breathtaking Andean landscapes and one of the world's great wonders.",
+    imageUrl: "https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&h=500&fit=crop",
   },
   "Hanoi": {
     type: "city",
@@ -403,6 +436,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Street Food Tours – Phở, bún chả, egg coffee & bánh mì everywhere",
     ],
     whyVisit: "Hanoi offers an authentic Asian experience – rich history, incredibly affordable street food, Ha Long Bay nearby, and a pace that's equal parts frenetic and serene.",
+    imageUrl: "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800&h=500&fit=crop",
   },
   "Cairo": {
     type: "city",
@@ -415,6 +449,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Islamic Cairo – Al-Azhar Mosque and medieval city gates",
     ],
     whyVisit: "Cairo is where human civilization began – standing before the Pyramids is a genuinely life-changing experience, and the city's energy is unforgettable.",
+    imageUrl: "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=800&h=500&fit=crop",
   },
   "Buenos Aires": {
     type: "city",
@@ -427,6 +462,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Puerto Madero – Waterfront dining with modern architecture & sunset views",
     ],
     whyVisit: "Buenos Aires offers world-class steak and wine at incredible prices, passionate tango culture, and a nightlife that doesn't start until midnight.",
+    imageUrl: "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=800&h=500&fit=crop",
   },
   "Zanzibar": {
     type: "city",
@@ -439,6 +475,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Prison Island – Snorkel with dolphins and visit giant Aldabra tortoises",
     ],
     whyVisit: "Zanzibar blends Swahili culture, Arab heritage, tropical beaches, and spice-scented air into an exotic escape that feels a world away from everything.",
+    imageUrl: "https://images.unsplash.com/photo-1586861203927-800a5acdcc4d?w=800&h=500&fit=crop",
   },
   "Cartagena": {
     type: "city",
@@ -451,6 +488,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Getsemaní – Trendy neighborhood with street art, bars & local culture",
     ],
     whyVisit: "Cartagena is one of the most romantic and vibrant cities in Latin America – colonial beauty, incredible ceviche, and Caribbean sunsets that melt your heart.",
+    imageUrl: "https://images.unsplash.com/photo-1583997052103-b4a1cb974ce5?w=800&h=500&fit=crop",
   },
   "Queenstown": {
     type: "city",
@@ -463,6 +501,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Jet Boating – Shotover River canyon at high speed",
     ],
     whyVisit: "Queenstown is a must for thrill-seekers and nature lovers alike – Lord of the Rings landscapes, world-class skiing, and adventures that push your limits.",
+    imageUrl: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
   },
   "Jaipur": {
     type: "city",
@@ -475,6 +514,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Jantar Mantar – UNESCO-listed astronomical observation site",
     ],
     whyVisit: "Jaipur is India at its most vibrant and regal – incredible architecture, spice-laden cuisine, textiles, and a sensory experience that stays with you forever.",
+    imageUrl: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&h=500&fit=crop",
   },
   "Medellín": {
     type: "city",
@@ -487,6 +527,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "El Poblado – Trendy neighborhood with nightlife, restaurants & boutiques",
     ],
     whyVisit: "Medellín embodies resilience and reinvention, offering incredible weather, warm locals (paisas), affordable living, and a creative energy that's inspiring.",
+    imageUrl: "https://images.unsplash.com/photo-1599413987323-b2b8ee040850?w=800&h=500&fit=crop",
   },
   "Maui": {
     type: "city",
@@ -499,9 +540,49 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Ka'anapali Beach – Three miles of golden sand with cliff-diving at Black Rock",
     ],
     whyVisit: "Maui is nature at its most spectacular – from volcanic craters to tropical rainforests to humpback whale sightings, it's an island that feeds your soul.",
+    imageUrl: "https://images.unsplash.com/photo-1542259009477-d625272157b7?w=800&h=500&fit=crop",
+  },
+  "Jerusalem": {
+    type: "city",
+    tagline: "The Holy City of Three Faiths",
+    description: "Jerusalem is one of the world's oldest and most sacred cities, revered by Judaism, Christianity, and Islam. Its ancient walls contain millennia of spiritual history, archaeological treasures, and living cultures side by side.",
+    highlights: [
+      "Western Wall – Judaism's holiest prayer site at the foot of the Temple Mount",
+      "Church of the Holy Sepulchre – Built over the site of Jesus's crucifixion and resurrection",
+      "Dome of the Rock – Stunning gold-domed Islamic shrine on the Temple Mount",
+      "Old City's Four Quarters – Jewish, Christian, Muslim & Armenian neighborhoods within ancient walls",
+    ],
+    whyVisit: "Jerusalem is unlike any city on Earth – a place where 3,000+ years of sacred history, diverse cultures, vibrant markets, and profound spiritual energy converge.",
+    imageUrl: "https://images.unsplash.com/photo-1549702724-c59a0e459987?w=800&h=500&fit=crop",
+  },
+  "Eilat": {
+    type: "city",
+    tagline: "Red Sea Sunshine & Coral Reefs",
+    description: "Eilat is Israel's southernmost city on the Red Sea, a year-round sun destination known for world-class diving, vibrant coral reefs, and a stunning desert-meets-sea landscape.",
+    highlights: [
+      "Coral Beach Nature Reserve – Snorkel among hundreds of species of fish and coral",
+      "Underwater Observatory – Walk beneath the Red Sea without getting wet",
+      "Dolphin Reef – Swim with wild bottlenose dolphins in their natural habitat",
+      "Ramon Crater (Makhtesh Ramon) – Massive geological wonder in the Negev Desert nearby",
+    ],
+    whyVisit: "Eilat offers guaranteed sunshine 360 days a year, tax-free shopping, incredible diving, and a relaxed resort vibe with the Negev Desert as a dramatic backdrop.",
+    imageUrl: "https://images.unsplash.com/photo-1580834341580-8c17a3a630c1?w=800&h=500&fit=crop",
   },
 
   // ===== COUNTRIES =====
+  "Israel": {
+    type: "country",
+    tagline: "A Tiny Country With Enormous Wonders",
+    description: "Israel packs an extraordinary amount into a small area – sacred cities, cutting-edge tech hubs, Mediterranean beaches, desert canyons, and the lowest point on Earth. A land of contrasts and deep history.",
+    highlights: [
+      "Dead Sea – Float effortlessly in the saltiest body of water on Earth at 430m below sea level",
+      "Jerusalem's Old City – 3,000+ years of sacred history within ancient stone walls",
+      "Tel Aviv – UNESCO White City, vibrant nightlife & world-class cuisine",
+      "Negev Desert – Stargazing, hiking, and Bedouin hospitality in Israel's wild south",
+    ],
+    whyVisit: "Israel offers an unmatched density of experiences – holy sites, incredible food (from shakshuka to hummus), Mediterranean beaches, desert adventures, and a startup-nation energy.",
+    imageUrl: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=500&fit=crop",
+  },
   "Japan": {
     type: "country",
     tagline: "Land of the Rising Sun",
@@ -513,6 +594,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Onsen Culture – Natural hot springs surrounded by stunning scenery",
     ],
     whyVisit: "Japan is consistently rated the most fascinating country to visit – unparalleled politeness, safety, cuisine, and a culture that balances old and new like nowhere else.",
+    imageUrl: "https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=800&h=500&fit=crop",
   },
   "Italy": {
     type: "country",
@@ -525,6 +607,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Cinque Terre – Five colorful fishing villages connected by coastal trails",
     ],
     whyVisit: "Italy has more UNESCO sites than any country, the world's most beloved cuisine, and a way of life – la dolce vita – that everyone should experience.",
+    imageUrl: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800&h=500&fit=crop",
   },
   "France": {
     type: "country",
@@ -537,6 +620,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Mont Saint-Michel – Tidal island topped by a medieval abbey",
     ],
     whyVisit: "France is the world's most visited country for good reason – incomparable food and wine, stunning landscapes, and a cultural richness that spans millennia.",
+    imageUrl: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&h=500&fit=crop",
   },
   "Spain": {
     type: "country",
@@ -549,6 +633,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Ibiza – Legendary island for world-class beach clubs and nightlife",
     ],
     whyVisit: "Spain offers incredible value, late-night culture, world-beating food (tapas, paella, pintxos), beaches, and a passion for life that's genuinely infectious.",
+    imageUrl: "https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=800&h=500&fit=crop",
   },
   "Thailand": {
     type: "country",
@@ -561,6 +646,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Elephant Nature Park – Ethical elephant sanctuary in the mountains",
     ],
     whyVisit: "Thailand offers the ultimate combination of affordability, natural beauty, warm hospitality, incredible food, and experiences ranging from serene to adventurous.",
+    imageUrl: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=800&h=500&fit=crop",
   },
   "Greece": {
     type: "country",
@@ -573,6 +659,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Greek Cuisine – Fresh feta, moussaka, souvlaki & ouzo by the sea",
     ],
     whyVisit: "Greece offers unbeatable island-hopping, ancient history around every corner, some of the warmest hospitality in Europe, and cuisine that's simple yet divine.",
+    imageUrl: "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&h=500&fit=crop",
   },
   "Turkey": {
     type: "country",
@@ -585,6 +672,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Turkish Riviera – Turquoise Coast with hidden coves and ancient ruins",
     ],
     whyVisit: "Turkey offers incredible variety, value, and hospitality – a country where you can soak in ancient hot springs, fly in a hot air balloon, and feast on world-class kebabs all in one trip.",
+    imageUrl: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=800&h=500&fit=crop",
   },
   "Portugal": {
     type: "country",
@@ -597,6 +685,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Azores – Remote volcanic islands with crater lakes and hot springs",
     ],
     whyVisit: "Portugal offers everything Western Europe has – history, wine, cuisine, beaches – at significantly lower prices, with some of the friendliest people you'll ever meet.",
+    imageUrl: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800&h=500&fit=crop",
   },
   "Australia": {
     type: "country",
@@ -609,6 +698,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Outback – Vast, ancient landscape under an infinite sky of stars",
     ],
     whyVisit: "Australia delivers once-in-a-lifetime experiences – swimming the Great Barrier Reef, holding a koala, road-tripping the coast, and experiencing Aboriginal culture spanning 65,000 years.",
+    imageUrl: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800&h=500&fit=crop",
   },
   "Mexico": {
     type: "country",
@@ -621,6 +711,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Day of the Dead – UNESCO-listed cultural celebration like no other",
     ],
     whyVisit: "Mexico offers incredible value, warm hospitality, rich history, stunning nature, and a food culture (tacos, mole, ceviche) that's a UNESCO Intangible Cultural Heritage.",
+    imageUrl: "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=800&h=500&fit=crop",
   },
   "Morocco": {
     type: "country",
@@ -633,6 +724,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Atlas Mountains – Berber villages, hiking trails & stunning passes",
     ],
     whyVisit: "Morocco offers an exotic escape just hours from Europe – incredible value, warm hospitality, vibrant markets, and landscapes that range from desert to mountains to coast.",
+    imageUrl: "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=800&h=500&fit=crop",
   },
   "New Zealand": {
     type: "country",
@@ -645,6 +737,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Rotorua – Geothermal wonderland and Māori cultural experiences",
     ],
     whyVisit: "New Zealand is the ultimate adventure destination – bungee jumping, skydiving, hiking, and some of the most breathtaking scenery on the planet.",
+    imageUrl: "https://images.unsplash.com/photo-1469521669194-babb45599def?w=800&h=500&fit=crop",
   },
   "Croatia": {
     type: "country",
@@ -657,6 +750,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Istria – Truffle hunting, vineyards & hilltop medieval towns",
     ],
     whyVisit: "Croatia offers Mediterranean beauty at more affordable prices than Italy or France, with incredibly clear waters, rich history, and warm Dalmatian hospitality.",
+    imageUrl: "https://images.unsplash.com/photo-1555990793-da11153b2473?w=800&h=500&fit=crop",
   },
   "Iceland": {
     type: "country",
@@ -669,6 +763,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Diamond Beach – Chunks of glacial ice sparkling on black volcanic sand",
     ],
     whyVisit: "Iceland is one of Earth's last frontiers – raw, powerful nature that humbles and inspires. Midnight sun in summer, northern lights in winter, magic year-round.",
+    imageUrl: "https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=800&h=500&fit=crop",
   },
   "Colombia": {
     type: "country",
@@ -681,6 +776,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "San Andrés Island – Caribbean island with seven shades of blue sea",
     ],
     whyVisit: "Colombia offers extraordinary diversity, incredibly warm and welcoming people, incredible coffee, salsa dancing, and some of the best-value travel in the Americas.",
+    imageUrl: "https://images.unsplash.com/photo-1535016120-5e59e5c8a4a7?w=800&h=500&fit=crop",
   },
   "Jordan": {
     type: "country",
@@ -693,6 +789,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Aqaba – Red Sea diving and snorkeling with vibrant coral reefs",
     ],
     whyVisit: "Jordan is one of the safest countries in the Middle East, offering world-class archaeological sites, stunning desert landscapes, and legendary Bedouin hospitality.",
+    imageUrl: "https://images.unsplash.com/photo-1563791877328-a73a9a355534?w=800&h=500&fit=crop",
   },
   "Vietnam": {
     type: "country",
@@ -705,6 +802,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Sapa Rice Terraces – Staircase-like paddies carved into mountain slopes",
     ],
     whyVisit: "Vietnam is one of the most affordable and rewarding countries to explore – extraordinary food, stunning landscapes, rich culture, and a warmth that stays with you.",
+    imageUrl: "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&h=500&fit=crop",
   },
   "Peru": {
     type: "country",
@@ -717,6 +815,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Lake Titicaca – Highest navigable lake with floating reed islands",
     ],
     whyVisit: "Peru offers one of the world's great wonders, one of the world's great cuisines, and adventures from Andean treks to Amazon expeditions – all remarkably affordable.",
+    imageUrl: "https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&h=500&fit=crop",
   },
   "South Africa": {
     type: "country",
@@ -729,6 +828,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Apartheid Museum – Powerful journey through South Africa's history",
     ],
     whyVisit: "South Africa offers incredible variety and value – world-class safaris, award-winning wines, stunning landscapes, and a cultural richness that's deeply moving.",
+    imageUrl: "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&h=500&fit=crop",
   },
   "Egypt": {
     type: "country",
@@ -741,6 +841,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Red Sea Diving – World-class coral reefs at Sharm el-Sheikh and Hurghada",
     ],
     whyVisit: "Egypt delivers genuinely awe-inspiring moments – standing before the Pyramids, entering Tutankhamun's tomb, and cruising the Nile are experiences that transcend tourism.",
+    imageUrl: "https://images.unsplash.com/photo-1539768942893-daf53e736b68?w=800&h=500&fit=crop",
   },
   "India": {
     type: "country",
@@ -753,6 +854,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Varanasi – India's holiest city, with sunrise rituals on the Ganges",
     ],
     whyVisit: "India is a full-spectrum experience that changes you – the colors, the chaos, the cuisine, the spirituality, and the warmth of 1.4 billion people's hospitality.",
+    imageUrl: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=500&fit=crop",
   },
   "Brazil": {
     type: "country",
@@ -765,6 +867,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Carnival – The world's largest and most colorful festival",
     ],
     whyVisit: "Brazil offers nature on an epic scale, an infectious musical culture, some of the world's best beaches, and a joyful spirit that defines the Brazilian way of life.",
+    imageUrl: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800&h=500&fit=crop",
   },
   "Costa Rica": {
     type: "country",
@@ -777,6 +880,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Nicoya Peninsula – One of the world's Blue Zones for longevity",
     ],
     whyVisit: "Costa Rica pioneered ecotourism and proves you don't need luxury to have the trip of a lifetime – just zip lines, wildlife encounters, and that Pura Vida spirit.",
+    imageUrl: "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=800&h=500&fit=crop",
   },
   "Tanzania": {
     type: "country",
@@ -789,6 +893,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Zanzibar – Spice island with turquoise waters and Stone Town heritage",
     ],
     whyVisit: "Tanzania delivers the ultimate African experience – the Great Migration, Kilimanjaro's summit, and Zanzibar's beaches, all in one extraordinary country.",
+    imageUrl: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop",
   },
   "United Arab Emirates": {
     type: "country",
@@ -801,6 +906,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Fujairah – Mountains, wadis & the UAE's eastern coast beaches",
     ],
     whyVisit: "The UAE offers a glimpse of the future – jaw-dropping architecture, world-class dining, tax-free shopping, and desert adventures, all in year-round sunshine.",
+    imageUrl: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=500&fit=crop",
   },
   "Argentina": {
     type: "country",
@@ -813,6 +919,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Argentine Steak – Asado culture with the world's best beef",
     ],
     whyVisit: "Argentina offers incredible geographic diversity, world-class wine and steak at amazing prices, passionate culture, and landscapes that range from glaciers to desert.",
+    imageUrl: "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=800&h=500&fit=crop",
   },
   "Maldives (Country)": {
     type: "country",
@@ -825,6 +932,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Bioluminescent Shores – Glowing beaches created by marine plankton",
     ],
     whyVisit: "The Maldives is the ultimate bucket-list destination – unreal natural beauty, world-class diving, and a level of tranquility that simply doesn't exist elsewhere.",
+    imageUrl: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&h=500&fit=crop",
   },
   "Norway": {
     type: "country",
@@ -837,6 +945,7 @@ export const allDestinations: Record<string, DestinationInfo> = {
       "Bergen – Colorful Bryggen wharf and gateway to the fjords",
     ],
     whyVisit: "Norway delivers jaw-dropping natural beauty around every bend – fjords, glaciers, northern lights, and a quality of life that consistently ranks among the world's highest.",
+    imageUrl: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&h=500&fit=crop",
   },
 };
 

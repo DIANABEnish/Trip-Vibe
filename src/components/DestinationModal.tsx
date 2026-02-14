@@ -28,11 +28,15 @@ const DestinationModal = ({ open, onClose, cityName, cityImage }: DestinationMod
         <DialogContent className="max-w-lg p-0 overflow-hidden rounded-2xl border-0 shadow-2xl max-h-[90vh] overflow-y-auto">
           {/* Hero image or gradient header */}
           <div className="relative h-48 md:h-56 overflow-hidden">
-            {cityImage ? (
-              <img src={cityImage} alt={cityName} className="w-full h-full object-cover" />
-            ) : (
-              <div className="w-full h-full gradient-brand" />
-            )}
+            {(cityImage || info.imageUrl) ? (
+                <img
+                  src={cityImage || info.imageUrl}
+                  alt={cityName}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="w-full h-full gradient-brand" />
+              )}
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
             <div className="absolute bottom-4 left-6 right-6">
               <DialogHeader>
