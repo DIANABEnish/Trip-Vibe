@@ -59,7 +59,7 @@ const DestinationSearch = ({ onSelectDestination }: DestinationSearchProps) => {
 
   return (
     <div ref={wrapperRef} className="relative w-full max-w-md">
-      <div className="flex items-center bg-primary-foreground rounded-full overflow-hidden shadow-xl">
+      <div className="flex items-center bg-primary-foreground rounded-full overflow-hidden shadow-xl h-12 md:h-14">
         <input
           type="text"
           placeholder="Search Country or City"
@@ -67,16 +67,16 @@ const DestinationSearch = ({ onSelectDestination }: DestinationSearchProps) => {
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => query.length > 0 && setOpen(true)}
           onKeyDown={handleKeyDown}
-          className="flex-1 px-6 py-4 text-foreground placeholder:text-muted-foreground bg-transparent outline-none text-sm"
+          className="flex-1 min-w-0 px-4 md:px-6 h-full text-foreground placeholder:text-muted-foreground bg-transparent outline-none text-sm"
         />
         <button
-          className="gradient-brand px-8 py-4 text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity flex items-center gap-2"
+          className="gradient-brand h-full px-4 md:px-8 text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity flex items-center gap-2 shrink-0"
           onClick={() => {
             if (results.length > 0) handleSelect(results[0]);
           }}
         >
           <Search className="w-4 h-4" />
-          Search
+          <span className="hidden sm:inline">Search</span>
         </button>
       </div>
 

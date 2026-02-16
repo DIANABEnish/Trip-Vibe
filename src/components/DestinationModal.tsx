@@ -25,7 +25,7 @@ const DestinationModal = ({ open, onClose, cityName, cityImage }: DestinationMod
   return (
     <>
       <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
-        <DialogContent className="max-w-lg p-0 overflow-hidden rounded-2xl border-0 shadow-2xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-lg w-[calc(100%-2rem)] mx-auto p-0 overflow-hidden rounded-2xl border-0 shadow-2xl max-h-[90vh] overflow-y-auto">
           {/* Hero image or gradient header */}
           <div className="relative h-48 md:h-56 overflow-hidden">
             {(cityImage || info.imageUrl) ? (
@@ -82,7 +82,7 @@ const DestinationModal = ({ open, onClose, cityName, cityImage }: DestinationMod
             {/* CTA Button */}
             <button
               onClick={() => setContactOpen(true)}
-              className="w-full gradient-brand text-primary-foreground font-semibold py-3 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity shadow-lg"
+              className="w-full gradient-brand text-primary-foreground font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity shadow-lg text-sm md:text-base"
             >
               <MessageCircle className="w-4 h-4" />
               Sounds amazing? Let's plan your trip!

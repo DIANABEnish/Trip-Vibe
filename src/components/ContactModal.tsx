@@ -33,7 +33,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
-      <DialogContent className="max-w-md rounded-2xl border-0 shadow-2xl p-0 overflow-hidden">
+      <DialogContent className="max-w-md w-[calc(100%-2rem)] mx-auto rounded-2xl border-0 shadow-2xl p-0 overflow-hidden">
         {/* Header */}
         <div className="gradient-brand px-6 py-6">
           <DialogHeader>

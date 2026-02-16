@@ -7,6 +7,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import StickyContactButton from "@/components/StickyContactButton";
 
 const Index = () => {
   return (
@@ -31,6 +32,7 @@ const Index = () => {
         <Testimonials />
       </ScrollReveal>
       <Footer />
+      <StickyContactButton />
     </main>
   );
 };
