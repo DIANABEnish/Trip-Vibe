@@ -68,7 +68,7 @@ const Footer = () => {
 
         <hr className="mt-10 border-primary-foreground/20" />
         <p className="text-center text-primary-foreground/60 text-xs mt-4">
-          © 2025 TripVibe. All rights reserved.
+          © 2025 DB Digital. All rights reserved.
         </p>
       </div>
     </footer>
