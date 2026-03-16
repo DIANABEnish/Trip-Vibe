@@ -84,7 +84,7 @@ const DestinationModal = ({ open, onClose, cityName, cityImage }: DestinationMod
               onClick={() => setContactOpen(true)}
               className="w-full gradient-brand text-primary-foreground font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity shadow-lg text-sm md:text-base"
             >
-              <MessageCircle className="w-4 h-4" />
+           
               Sounds amazing? Let's plan your trip!
             </button>
           </div>
